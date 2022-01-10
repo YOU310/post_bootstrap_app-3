@@ -2,7 +2,7 @@
   <%# ログイン時 %>
   <%= link_to "アカウント編集", edit_user_registration_path %>
   <%= link_to "ログアウト", destroy_user_session_path, method: :delete, data: { confirm: "ログアウトしますか？" } %>
-
+  <%= "【ログイン中のアドレス】#{current_user.email}" %>
 <% else %>
   <%# 非ログイン時 %>
 <% end %>
